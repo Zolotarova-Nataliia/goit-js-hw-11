@@ -70,6 +70,12 @@ body {
   border: none;
   height: 30px;
   border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(122, 118, 118);
+    color: white;
+    transition: background-color 600ms ease;
+  }
 }
 
 .gallery {
@@ -85,12 +91,22 @@ body {
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
     0px 2px 1px -1px rgba(0, 0, 0, 0.12);
   cursor: pointer;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+}
+
+.photo-card:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 
 .photo-card__img {
   width: 100%;
   object-fit: cover;
   height: 230px;
+  overflow: hidden;
 }
 .info {
   display: flex;
@@ -122,6 +138,10 @@ body {
   background-color: pink;
   color: #fff;
   cursor: pointer;
+  &:hover {
+    background-color: rgb(122, 118, 118);
+    transition: background-color 600ms ease;
+  }
 }
 
 .visually-hidden {
